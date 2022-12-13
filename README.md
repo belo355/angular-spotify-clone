@@ -25,3 +25,13 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Utils 
+
+Create app into spotify developer [developer-dashboard](https://developer.spotify.com/dashboard/login)
+
+-- 
+
+Clone this project develop into live [Cristian William Dev](https://github.com/cristianWilliam/Sp...)
+
