@@ -12,7 +12,7 @@ import { LoginRotas } from './login-routes';
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(LoginRotas)
+    RouterModule.forChild(LoginRotas),
   ]
 })
 export class LoginModule { }
