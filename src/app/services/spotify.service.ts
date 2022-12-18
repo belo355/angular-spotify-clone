@@ -1,4 +1,4 @@
-import { SpotifyConfiguration } from './../../environments/environment.prod';
+import { SpotifyConfiguration } from './../../environments/environment';
 import { Injectable } from '@angular/core';
 import { IUsuario } from '../interfaces/IUsuario';
 import { SpotifyUserParaUsuarios } from '../common/spotifyHelper';
@@ -54,7 +54,6 @@ export class SpotifyService {
     if (!window.location.hash)
       return '';
     const params = window.location.hash.substring(1).split('&');
-    console.log(params);
     return params[0].split('=')[1];
   }
 

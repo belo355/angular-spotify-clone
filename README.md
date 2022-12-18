@@ -33,5 +33,5 @@ Create app into spotify developer [developer-dashboard](https://developer.spotif
 
 -- 
 
-Clone this project develop into live [Cristian William Dev](https://github.com/cristianWilliam/Sp...)
+Clone this project develop into live [Cristian William Dev](https://github.com/cristianWilliam/Spotify-Angular)
 
