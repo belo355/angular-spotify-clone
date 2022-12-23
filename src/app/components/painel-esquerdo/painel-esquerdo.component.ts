@@ -1,3 +1,5 @@
+import { SpotifyService } from 'src/app/services/spotify.service';
+import { IPlaylist } from './../../interfaces/IPlaylist';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PainelEsquerdoComponent implements OnInit {
 
-  constructor() { }
+  // homeIcon = faHome;
+  // pesquisarItem = faSearch;
+  // artistaIcone = faGuitar;
+  // playlist = faMusic;
+
+  playlist: IPlaylist[]= [];
+
+  menuSelecionado = "Home";
+
+  constructor(private spotifyService: SpotifyService){ }
 
   ngOnInit(): void {
+    this.buscarPlaylists();
   }
 
+  botaoClick(botao: string){
+    this.menuSelecionado = botao;
+  }
+
+  async buscarPlaylists() {
+    this.playlist = await this.spotifyService.buscarPlaylistUsuario();
+    //TODO --> CORRIGIR CHAMADA DE PLAYLISTS
+  }
 }

@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
+import { BotaoMenuComponent } from './components/botao-menu/botao-menu.component';
 
 @NgModule({
   declarations: [
