@@ -52,8 +52,14 @@ $m-entre-menus: 10px;
         color: $preto-tranparente-30;
       }
 
-      .platlist-scroll {
+      .playlist-scroll {
         width: 100%;
+        max-height: 50vh;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar{
+          display: none;
+        }
 
         * {
           margin-bottom: $m-entre-menus;

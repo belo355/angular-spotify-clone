@@ -14,7 +14,7 @@ export class PainelEsquerdoComponent implements OnInit {
   // artistaIcone = faGuitar;
   // playlist = faMusic;
 
-  playlist: IPlaylist[]= [];
+  playlists: IPlaylist[]= [];
 
   menuSelecionado = "Home";
 
@@ -29,7 +29,6 @@ export class PainelEsquerdoComponent implements OnInit {
   }
 
   async buscarPlaylists() {
-    this.playlist = await this.spotifyService.buscarPlaylistUsuario();
-    //TODO --> CORRIGIR CHAMADA DE PLAYLISTS
+    this.playlists = await this.spotifyService.buscarPlaylistUsuario();
   }
 }
